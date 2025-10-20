@@ -4,21 +4,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <script src="./script/server_login.js" defer></script>
+    <!-- Carrega o JS do login com defer -->
+    <script src="./script/script_login.js" defer></script>
 </head>
 <body>
     
     <h2>Login</h2>
     <form id="loginForm">
         <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required><br><br>
+        <input type="text" id="username" name="username" required autocomplete="username"><br><br>
+
         <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required><br><br>
-    
+        <input type="password" id="password" name="password" required autocomplete="current-password"><br><br>
+
         <button type="submit">Login</button>
-
     </form>
-
 
 </body>
 </html>
