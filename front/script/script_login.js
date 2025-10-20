@@ -1,4 +1,3 @@
-// Testa se o script está carregando
 console.log('Script carregado!');
 
 const form = document.getElementById('loginForm');
