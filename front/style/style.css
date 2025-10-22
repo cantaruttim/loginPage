@@ -1,158 +1,182 @@
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        }
-        
-        body {
-            background-color: #f5f5f5;
-            color: #333;
-            line-height: 1.6;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-            padding: 20px;
-        }
-        
-        .container {
-            display: flex;
-            max-width: 1000px;
-            width: 100%;
-            background: white;
-            border-radius: 10px;
-            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-            overflow: hidden;
-        }
-        
-        .login-section {
-            flex: 1;
-            padding: 40px;
-            border-right: 1px solid #eee;
-        }
-        
-        .info-section {
-            flex: 1;
-            padding: 40px;
-            background: linear-gradient(135deg, #1a73e8, #0d47a1);
-            color: white;
-        }
-        
-        h1 {
-            font-size: 24px;
-            margin-bottom: 10px;
-            color: #1a73e8;
-        }
-        
-        h2 {
-            font-size: 18px;
-            margin-bottom: 20px;
-            font-weight: normal;
-            color: #666;
-        }
-        
-        .email-options {
-            margin-bottom: 20px;
-        }
-        
-        .email-option {
-            display: flex;
-            align-items: center;
-            margin-bottom: 10px;
-            padding: 10px;
-            border: 1px solid #ddd;
-            border-radius: 5px;
-            cursor: pointer;
-            transition: all 0.3s;
-        }
-        
-        .email-option:hover {
-            background-color: #f9f9f9;
-            border-color: #1a73e8;
-        }
-        
-        .email-option input[type="radio"] {
-            margin-right: 10px;
-        }
-        
-        .remember-forgot {
-            display: flex;
-            justify-content: space-between;
-            margin-bottom: 20px;
-        }
-        
-        .remember {
-            display: flex;
-            align-items: center;
-        }
-        
-        .remember input {
-            margin-right: 5px;
-        }
-        
-        .forgot {
-            color: #1a73e8;
-            text-decoration: none;
-        }
-        
-        .divider {
-            height: 1px;
-            background-color: #eee;
-            margin: 20px 0;
-        }
-        
-        .security-options {
-            display: flex;
-            margin-bottom: 20px;
-        }
-        
-        .security-option {
-            display: flex;
-            align-items: center;
-            margin-right: 20px;
-        }
-        
-        .security-option input {
-            margin-right: 5px;
-        }
-        
-        .no-account {
-            margin-bottom: 30px;
-        }
-        
-        .no-account a {
-            color: #1a73e8;
-            text-decoration: none;
-            font-weight: bold;
-        }
-        
-        h3 {
-            font-size: 20px;
-            margin-bottom: 15px;
-        }
-        
-        .feature {
-            margin-bottom: 20px;
-        }
-        
-        .feature h4 {
-            font-size: 16px;
-            margin-bottom: 5px;
-        }
-        
-        .feature p {
-            font-size: 14px;
-            opacity: 0.9;
-        }
-        
-        @media (max-width: 768px) {
-            .container {
-                flex-direction: column;
-            }
-            
-            .login-section {
-                border-right: none;
-                border-bottom: 1px solid #eee;
-            }
-        }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    height: 100%;
+    font-family: 'Inter', sans-serif;
+}
+
+.container {
+    display: flex;
+    height: 100vh;
+}
+
+/* Painel esquerdo */
+.left-panel {
+    flex: 1;
+    background-color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-box {
+    width: 100%;
+    max-width: 360px;
+    padding: 20px;
+    text-align: center;
+}
+
+.icon img {
+    width: 50px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #333;
+    font-weight: 600;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+form {
+    text-align: left;
+}
+
+label {
+    font-weight: 500;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-box {
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.input-box input {
+    width: 100%;
+    padding: 10px 10px 10px 30px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.input-icon {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #888;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.options a {
+    color: #f26000;
+    text-decoration: none;
+}
+
+button {
+    width: 100%;
+    background-color: #f26000;
+    color: #fff;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.tags {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.tag {
+    padding: 6px 12px;
+    border-radius: 6px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.tag.seguro {
+    background-color: #ffe9dc;
+    color: #d9534f;
+}
+
+.tag.protegido {
+    background-color: #fff3e0;
+    color: #f0ad4e;
+}
+
+.signup {
+    font-size: 13px;
+}
+
+.signup a {
+    color: #f26000;
+    text-decoration: none;
+}
+
+/* Painel direito */
+.right-panel {
+    flex: 1;
+    background: url('./static/photo-1690473768383-a1f56b6f92c9.jpg') no-repeat center center/cover;
+    color: #fff;
+    position: relative;
+}
+
+.overlay {
+    background-color: rgba(242, 96, 0, 0.75);
+    height: 100%;
+    width: 100%;
+    padding: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.overlay h3 {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.overlay p {
+    font-size: 14px;
+    margin-bottom: 30px;
+    max-width: 400px;
+}
+
+.features .feature-box {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 10px;
+}
+
+.feature-box h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+.feature-box p {
+    font-size: 13px;
+}

@@ -3,70 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Porta de Segurança</title>
+    <title>Portal de Segurança</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
 </head>
 <body>
     <div class="container">
-        <div class="login-section">
-            <h1>Porta de Segurança</h1>
-            <h2>Acesse sua área de trabalho com segurança</h2>
-            
-            <div class="email-options">
-                <label class="email-option">
-                    <input type="radio" name="email" checked>
-                    seu@email.com
-                </label>
-                <label class="email-option">
-                    <input type="radio" name="email">
-                    Sendra
-                </label>
-                <label class="email-option">
-                    <input type="radio" name="email">
-                    ………
-                </label>
-            </div>
-            
-            <div class="remember-forgot">
-                <label class="remember">
-                    <input type="checkbox">
-                    Lembrar-me
-                </label>
-                <a href="#" class="forgot">Esqueci a senha?</a>
-            </div>
-            
-            <div class="divider"></div>
-            
-            <h2>E-mail com segurança</h2>
-            
-            <div class="security-options">
-                <label class="security-option">
-                    <input type="checkbox" checked>
-                    Seguro
-                </label>
-                <label class="security-option">
-                    <input type="checkbox" checked>
-                    Protegido
-                </label>
-            </div>
-            
-            <div class="no-account">
-                Não tem uma conta? <a href="#">Solicite acesso</a>
+        <!-- Esquerda: Formulário -->
+        <div class="left-panel">
+            <div class="form-box">
+                <div class="icon">
+                    <img src="https://img.icons8.com/ios-filled/50/FA7E1E/security-checked.png" alt="Ícone de segurança">
+                </div>
+                <h2>Portal de Segurança</h2>
+                <p>Acesse sua área de trabalho com segurança</p>
+
+                <form>
+                    <label for="email">Email</label>
+                    <div class="input-box">
+                        <span class="input-icon">@</span>
+                        <input type="email" id="email" placeholder="seu@email.com" required>
+                    </div>
+
+                    <label for="senha">Senha</label>
+                    <div class="input-box">
+                        <span class="input-icon">🔒</span>
+                        <input type="password" id="senha" placeholder="********" required>
+                    </div>
+
+                    <div class="options">
+                        <label><input type="checkbox"> Lembrar-me</label>
+                        <a href="#">Esqueceu a senha?</a>
+                    </div>
+
+                    <button type="submit">Entrar com Segurança</button>
+                </form>
+
+                <div class="tags">
+                    <span class="tag seguro">🔐 Seguro</span>
+                    <span class="tag protegido">⚠️ Protegido</span>
+                </div>
+
+                <p class="signup">Não tem uma conta? <a href="#">Solicite acesso</a></p>
             </div>
         </div>
-        
-        <div class="info-section">
-            <h3>Sua Segurança é Nossa Prioridade</h3>
-            <p>Sistema de gestão de segurança do trabalho com tecnologia de ponta para proteger você e sua equipe.</p>
-            
-            <div class="features">
-                <div class="feature">
-                    <h4>1. 100% Seguro</h4>
-                    <p>Dados criptografados e protegidos</p>
-                </div>
-                
-                <div class="feature">
-                    <h4>2. Conformidade Total</h4>
-                    <p>De acordo com todas as normas IVR</p>
+
+        <!-- Direita: Imagem e Informações -->
+        <div class="right-panel">
+            <div class="overlay">
+                <h3>Sua Segurança é Nossa Prioridade</h3>
+                <p>Sistema de gestão de segurança do trabalho com tecnologia de ponta para proteger você e sua equipe.</p>
+                <div class="features">
+                    <div class="feature-box">
+                        <h4>✅ 100% Seguro</h4>
+                        <p>Dados criptografados e protegidos</p>
+                    </div>
+                    <div class="feature-box">
+                        <h4>✅ Conformidade Total</h4>
+                        <p>De acordo com todas as normas NR</p>
+                    </div>
                 </div>
             </div>
         </div>
