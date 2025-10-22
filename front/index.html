@@ -1,25 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
-    <script src="./script/script_login.js" defer></script>
+    <title>Porta de Segurança</title>
 </head>
 <body>
-    
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="username">Username:</label><br>
-        <input type="text" id="username" name="username" required autocomplete="username"><br><br>
-
-        <label for="password">Password:</label><br>
-        <input type="password" id="password" name="password" required autocomplete="current-password"><br><br>
-
-        <button type="submit">Login</button>
-    </form>
-
-    <br />
-    <footer>Developed for <i>MG IT Consulting</i></footer>
+    <div class="container">
+        <div class="login-section">
+            <h1>Porta de Segurança</h1>
+            <h2>Acesse sua área de trabalho com segurança</h2>
+            
+            <div class="email-options">
+                <label class="email-option">
+                    <input type="radio" name="email" checked>
+                    seu@email.com
+                </label>
+                <label class="email-option">
+                    <input type="radio" name="email">
+                    Sendra
+                </label>
+                <label class="email-option">
+                    <input type="radio" name="email">
+                    ………
+                </label>
+            </div>
+            
+            <div class="remember-forgot">
+                <label class="remember">
+                    <input type="checkbox">
+                    Lembrar-me
+                </label>
+                <a href="#" class="forgot">Esqueci a senha?</a>
+            </div>
+            
+            <div class="divider"></div>
+            
+            <h2>E-mail com segurança</h2>
+            
+            <div class="security-options">
+                <label class="security-option">
+                    <input type="checkbox" checked>
+                    Seguro
+                </label>
+                <label class="security-option">
+                    <input type="checkbox" checked>
+                    Protegido
+                </label>
+            </div>
+            
+            <div class="no-account">
+                Não tem uma conta? <a href="#">Solicite acesso</a>
+            </div>
+        </div>
+        
+        <div class="info-section">
+            <h3>Sua Segurança é Nossa Prioridade</h3>
+            <p>Sistema de gestão de segurança do trabalho com tecnologia de ponta para proteger você e sua equipe.</p>
+            
+            <div class="features">
+                <div class="feature">
+                    <h4>1. 100% Seguro</h4>
+                    <p>Dados criptografados e protegidos</p>
+                </div>
+                
+                <div class="feature">
+                    <h4>2. Conformidade Total</h4>
+                    <p>De acordo com todas as normas IVR</p>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
