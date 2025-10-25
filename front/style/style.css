@@ -163,11 +163,13 @@ button {
     font-size: 14px;
     margin-bottom: 30px;
     max-width: 400px;
+    color: #fff;
 }
 
 .features .feature-box {
     background-color: rgba(255, 255, 255, 0.1);
     padding: 15px;
+    color: #fff;
     margin-bottom: 15px;
     border-radius: 10px;
 }
@@ -175,8 +177,10 @@ button {
 .feature-box h4 {
     font-size: 16px;
     margin-bottom: 5px;
+    color: #fff;
 }
 
 .feature-box p {
     font-size: 13px;
+    color: #fff;
 }
